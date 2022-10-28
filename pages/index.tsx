@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          that's it.
+          thats it.
         </p>
       </main>
 

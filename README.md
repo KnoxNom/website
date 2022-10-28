@@ -1,3 +1,3 @@
 # website
 
-that's it.
+thats it.
