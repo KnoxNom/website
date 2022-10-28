@@ -8,6 +8,7 @@ export default function Home() {
       <Head>
         <title>website</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="website thats it." />
       </Head>
 
       <main className={styles.main}>
@@ -16,7 +17,9 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
+          <a href="/about">
           thats it.
+          </a>
         </p>
       </main>
 
