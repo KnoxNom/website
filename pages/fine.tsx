@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 
 export default function Fine() {
@@ -38,12 +39,12 @@ export default function Fine() {
         </div>
 
         <footer className={styles.footer}>
-            <a href="404" target="_blank" rel="noopener noreferrer">
+        <Link href="404" target="_blank" rel="noopener noreferrer">
             Right still powered by {' '}
           <span className={styles.logo}>
-        <Image src="/favicon.ico" alt="website logo" width={1} height={1} />
+          <Image src="/favicon.ico" alt="website logo" width={1} height={1} />
           </span>
-        </a>
+        </Link>
         </footer>
         </div>
     )

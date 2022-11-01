@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 
 export default function About() {
@@ -17,19 +18,19 @@ export default function About() {
         </h1>
 
         <p className={styles.description}>
-            <a href="/more">
+          <Link href="/more/">
           its a website what more do you want?
-          </a>
+          </Link>
         </p>
       </main>
 
       <footer className={styles.footer}>
-        <a href="404" target="_blank" rel="noopener noreferrer">
+        <Link href="404" target="_blank" rel="noopener noreferrer">
         Still powered by {' '}
           <span className={styles.logo}>
-        <Image src="/favicon.ico" alt="website logo" width={22} height={22} />
+          <Image src="/favicon.ico" alt="website logo" width={22} height={22} />
           </span>
-        </a>
+        </Link>
       </footer>
     </div>
     )

@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import Link from "next/link"
 import styles from '../styles/Home.module.scss'
 
 export default function More() {
@@ -17,9 +18,9 @@ export default function More() {
             </h1>
 
         <p className={styles.description}>
-            <a href="/fine">
+            <Link href="/fine/">
                 fine have more but dont say I didnt warn you.
-            </a>
+            </Link>
         </p>
 
         <p className={styles.hidden}>
@@ -28,12 +29,12 @@ export default function More() {
         </main>
 
         <footer className={styles.footer}>
-            <a href="404" target="_blank" rel="noopener noreferrer">
+        <Link href="/404/" target="_blank" rel="noopener noreferrer">
             Btw still powered by {' '}
-          <span className={styles.logo}>
-        <Image src="/favicon.ico" alt="website logo" width={11} height={11} />
+            <span className={styles.logo}>
+            <Image src="/favicon.ico" alt="website logo" width={11} height={11} />
           </span>
-        </a>
+        </Link>
         </footer>
         </div>
     )
