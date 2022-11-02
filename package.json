@@ -1,9 +1,9 @@
 {
   "name": "website",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build && next export",
     "lint": "next lint",
     "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
