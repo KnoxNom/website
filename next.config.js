@@ -2,8 +2,12 @@ const path = require('path');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/website',
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
+  },
+  experimental: {
+    appDir: true
   },
   reactStrictMode: true,
   swcMinify: true,
