@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "lint": "next lint",
-    "deploy": "next build && touch out/.nojekyll && cd out/ && git add . && git commit -m \"Deploy\" && git push origin gh-pages"
+    "deploy": "next build && touch out/.nojekyll && cd out/ && git add . && git commit -m Deploy && git push origin gh-pages"
   },
   "dependencies": {
     "next": "latest",
